@@ -1,0 +1,171 @@
+body {
+    background:black;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertically center the clock */
+    height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0; 
+    background-image: url(cool.jpg);
+    background-repeat: no-repeat;
+    
+    
+}
+
+
+
+
+.clock {
+    background: lightgray;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 14px solid #333;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    box-shadow: 0 2px 4px 2px black;
+}
+
+.hour-hand {
+    position: absolute;
+    z-index: 5;
+    width: 4px;
+    height: 65px;
+    background-color: #000;
+    top: 50%;
+    left: 50%;
+    margin-left: -2px;
+    transform-origin: 50% 100%;
+    transform: rotate(90deg);
+    top: 86px;
+}
+
+.minute-hand {
+    position: absolute;
+    z-index: 6;
+    width: 4px;
+    height: 100px;
+    background: #000;
+    top: 50%;
+    left: 50%;
+    margin-left: -2px;
+    transform-origin: 50% 100%;
+    transform: rotate(180deg);
+    top: 50px;
+}
+
+.second-hand {
+    position: absolute;
+    z-index: 7;
+    width: 2px;
+    height: 120px;
+    background-color: orange;
+    top: 50%;
+    left: 50%;
+    margin-left: -1px;
+    transform-origin: 50% 100%;
+    transform: rotate(270deg);
+    top: 30px;
+}
+
+span {
+    position: absolute;
+    color: gray;
+    font-size: 22px;
+    font-weight: 700;
+    z-index: 4;
+}
+
+.h12 {
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.h3 {
+    top: 140px;
+    right: 24px;
+}
+
+.h6 {
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.h9 {
+    top: 140px;
+    left: 28px;
+}
+
+.diallines {
+    position: absolute;
+    z-index: 2;
+    width: 4px;
+    height: 25px;
+    background: gray;
+    left: 50%;
+    margin-left: -1px;
+    transform-origin: 50% 150px;
+}
+
+.diallines:nth-child(5n) {
+    position: absolute;
+    z-index: 2;
+    width: 4px;
+    height: 25px;
+    background: black;
+    left: 50%;
+    margin-left: -1px;
+    transform-origin: 50% 150px;
+}
+
+.info {
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: lightgray;
+    text-align: center;
+    line-height: 20px;
+    color: black;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+    z-index: 3;
+    letter-spacing: 3px;
+    
+    
+}
+
+.date {
+    top: 175px; /* Adjust this value as needed */
+}
+
+.day {
+    top: 200px; /* Adjust this value as needed */
+}
+
+.save{
+    color: white;
+    top: 75px;
+    bottom: -100px;
+}
+
+
+
+
+    
